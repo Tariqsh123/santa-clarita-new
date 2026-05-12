@@ -2,99 +2,99 @@
   "use strict";
 
   // ===== Initialize navbar toggle
-  function initNavbarToggle() {
-    const navbarToggler = document.querySelector("#navbarToggler");
-    const nav = document.querySelector("nav[data-state]");
+  // function initNavbarToggle() {
+  //   const navbarToggler = document.querySelector("#navbarToggler");
+  //   const nav = document.querySelector("nav[data-state]");
 
-    if (!navbarToggler || !nav) return;
+  //   if (!navbarToggler || !nav) return;
 
-    navbarToggler.addEventListener("click", (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      const currentState = nav.getAttribute("data-state");
-      const newState = currentState === "active" ? "inactive" : "active";
-      nav.setAttribute("data-state", newState);
+  //   navbarToggler.addEventListener("click", (e) => {
+  //     e.preventDefault();
+  //     e.stopPropagation();
+  //     const currentState = nav.getAttribute("data-state");
+  //     const newState = currentState === "active" ? "inactive" : "active";
+  //     nav.setAttribute("data-state", newState);
 
-      navbarToggler.setAttribute(
-        "aria-label",
-        newState === "active" ? "Close Menu" : "Open Menu"
-      );
-    });
+  //     navbarToggler.setAttribute(
+  //       "aria-label",
+  //       newState === "active" ? "Close Menu" : "Open Menu"
+  //     );
+  //   });
 
-    // Close the mobile menu when any navigation link is clicked.
-    // This avoids relying on brittle class selectors that may include special characters.
-    const mobileLinks = nav.querySelectorAll("a:not(.mobile-accordion-toggle)");
-    mobileLinks.forEach((link) => {
-      link.addEventListener("click", () => {
-        nav.setAttribute("data-state", "inactive");
-        navbarToggler.setAttribute("aria-label", "Open Menu");
-      });
-    });
+  //   // Close the mobile menu when any navigation link is clicked.
+  //   // This avoids relying on brittle class selectors that may include special characters.
+  //   const mobileLinks = nav.querySelectorAll("a:not(.mobile-accordion-toggle)");
+  //   mobileLinks.forEach((link) => {
+  //     link.addEventListener("click", () => {
+  //       nav.setAttribute("data-state", "inactive");
+  //       navbarToggler.setAttribute("aria-label", "Open Menu");
+  //     });
+  //   });
 
-    const accordionToggles = document.querySelectorAll(
-      ".mobile-accordion-toggle"
-    );
-    accordionToggles.forEach((toggle) => {
-      toggle.addEventListener("click", (e) => {
-        e.preventDefault();
-        const targetId = toggle.getAttribute("data-target");
-        const targetContent = document.getElementById(targetId);
-        const icon = toggle.querySelector(".mobile-accordion-icon");
+  //   const accordionToggles = document.querySelectorAll(
+  //     ".mobile-accordion-toggle"
+  //   );
+  //   accordionToggles.forEach((toggle) => {
+  //     toggle.addEventListener("click", (e) => {
+  //       e.preventDefault();
+  //       const targetId = toggle.getAttribute("data-target");
+  //       const targetContent = document.getElementById(targetId);
+  //       const icon = toggle.querySelector(".mobile-accordion-icon");
 
-        if (targetContent && icon) {
-          const isHidden = targetContent.classList.contains("hidden");
-          targetContent.classList.toggle("hidden");
-          icon.classList.toggle("rotate-180");
+  //       if (targetContent && icon) {
+  //         const isHidden = targetContent.classList.contains("hidden");
+  //         targetContent.classList.toggle("hidden");
+  //         icon.classList.toggle("rotate-180");
 
-          toggle.setAttribute("aria-expanded", isHidden ? "true" : "false");
-        }
-      });
-    });
+  //         toggle.setAttribute("aria-expanded", isHidden ? "true" : "false");
+  //       }
+  //     });
+  //   });
 
-    document.addEventListener("click", (e) => {
-      const isClickInside = nav.contains(e.target);
-      const currentState = nav.getAttribute("data-state");
+  //   document.addEventListener("click", (e) => {
+  //     const isClickInside = nav.contains(e.target);
+  //     const currentState = nav.getAttribute("data-state");
 
-      if (!isClickInside && currentState === "active") {
-        nav.setAttribute("data-state", "inactive");
-        navbarToggler.setAttribute("aria-label", "Open Menu");
-      }
-    });
+  //     if (!isClickInside && currentState === "active") {
+  //       nav.setAttribute("data-state", "inactive");
+  //       navbarToggler.setAttribute("aria-label", "Open Menu");
+  //     }
+  //   });
 
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && nav.getAttribute("data-state") === "active") {
-        nav.setAttribute("data-state", "inactive");
-        navbarToggler.setAttribute("aria-label", "Open Menu");
-        navbarToggler.focus(); // Return focus to toggle button
-      }
-    });
-  }
+  //   document.addEventListener("keydown", (e) => {
+  //     if (e.key === "Escape" && nav.getAttribute("data-state") === "active") {
+  //       nav.setAttribute("data-state", "inactive");
+  //       navbarToggler.setAttribute("aria-label", "Open Menu");
+  //       navbarToggler.focus(); // Return focus to toggle button
+  //     }
+  //   });
+  // }
 
   // ===== Initialize navbar scroll effect
-  function initNavbarScroll() {
-    const nav = document.querySelector("nav");
-    if (!nav) return;
+  // function initNavbarScroll() {
+  //   const nav = document.querySelector("nav");
+  //   if (!nav) return;
 
-    const firstDiv = nav.querySelector("div");
-    if (!firstDiv) return;
+  //   const firstDiv = nav.querySelector("div");
+  //   if (!firstDiv) return;
 
-    const initialClasses = firstDiv.className;
-    const scrolledClasses =
-      "mx-auto mt-2 px-6 transition-all duration-300 bg-background/50 max-w-4xl rounded-2xl border backdrop-blur-lg lg:px-5";
+  //   const initialClasses = firstDiv.className;
+  //   const scrolledClasses =
+  //     "mx-auto mt-2 px-6 transition-all duration-300 bg-background/50 max-w-4xl rounded-2xl border backdrop-blur-lg lg:px-5";
 
-    let isScrolled = false;
+  //   let isScrolled = false;
 
-    const handleScroll = () => {
-      const shouldBeScrolled = window.scrollY > 50; // Added threshold for better UX
+  //   const handleScroll = () => {
+  //     const shouldBeScrolled = window.scrollY > 50; // Added threshold for better UX
 
-      if (shouldBeScrolled !== isScrolled) {
-        isScrolled = shouldBeScrolled;
-        firstDiv.className = isScrolled ? scrolledClasses : initialClasses;
-      }
-    };
+  //     if (shouldBeScrolled !== isScrolled) {
+  //       isScrolled = shouldBeScrolled;
+  //       firstDiv.className = isScrolled ? scrolledClasses : initialClasses;
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-  }
+  //   window.addEventListener("scroll", handleScroll);
+  // }
 
   // Global FAQ toggle function for inline onclick handlers
   window.toggleFAQ = function toggleFAQ(button, index) {

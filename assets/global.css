@@ -131,21 +131,9 @@ html, body {
 
 
 .new-home-hero-section {
-    position: relative;
-    background-image: url('../assets/images/mold-inspection-benifit-image.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 150px 20px 60px;
+    background-color: #f0f9ff;
+    padding: 200px 20px 60px;
     margin: 0;
-    overflow: hidden;
-  }
-
-  .new-home-hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 1;
   }
 
   .new-home-hero-content {
@@ -153,7 +141,6 @@ html, body {
     z-index: 2;
     max-width: 1200px;
     margin: 0 auto;
-    color: #fff;
   }
 
   .new-home-hero-title {
@@ -171,13 +158,11 @@ html, body {
     font-size: 18px;
     line-height: 1.8;
     margin-bottom: 20px;
-    color: #f3f3f3;
   }
 
   .new-home-hero-highlight {
     font-size: 22px !important;
     font-weight: 700;
-    color: #ffffff;
   }
 
   .new-home-hero-btn {
@@ -248,6 +233,7 @@ html, body {
       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       width: 100%;
       max-width: 350px ;
+      background: #f0f9ff;
     }
 
     .new-service-section-card:hover {
@@ -280,3 +266,30 @@ html, body {
       height: 4px;
       background: linear-gradient(to right, #4f46e5, #6366f1);
     }
+
+
+    .upper-nav{
+      height: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background: #4f46e5;
+    }
+    .dropdown-item-new{
+      color: black;
+    }
+    @media(max-width:991px){
+      .upper-nav{
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding-right: 20px;
+      }
+
+    }
+
+
+p ,a, span ,li,td , th{
+  font-size: 18px !important;
+}
