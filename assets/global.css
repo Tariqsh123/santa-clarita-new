@@ -238,3 +238,45 @@ html, body {
       font-size: 28px;
     } */
   }
+  
+
+  .new-service-section .new-service-section-header{
+    opacity: 1 !important;
+
+  }
+  .new-service-section-card {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      width: 100%;
+      max-width: 350px ;
+    }
+
+    .new-service-section-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 25px 50px -12px rgb(79 70 229 / 0.15);
+    }
+
+    .new-service-section-icon-wrapper {
+      transition: all 0.3s ease;
+    }
+
+    .new-service-section-card:hover .new-service-section-icon-wrapper {
+      background-color: #4f46e5;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    .new-service-section-header {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+
+    .new-service-section-header.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .new-service-section-accent-line {
+      height: 4px;
+      background: linear-gradient(to right, #4f46e5, #6366f1);
+    }
