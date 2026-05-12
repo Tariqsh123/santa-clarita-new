@@ -233,6 +233,7 @@ html, body {
       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       width: 100%;
       max-width: 350px ;
+      border: 2px solid #4f46e5;
       background: #f0f9ff;
     }
 
@@ -286,10 +287,49 @@ html, body {
         justify-content: flex-end;
         padding-right: 20px;
       }
+      .custom-new-nav-callbtn{
+        padding: 5px 3px !important;
+        gap: 10px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 160px;
+      }
+      .custom-new-nav-container {
+        padding: 10px !important;
+      }
+      .custom-new-nav-callbtn i{
+        font-size: small !important;
+      }
+      .custom-new-nav-callbtn span{
+        font-size: medium !important;
+      }
 
     }
+.custom-new-nav-mobile{
+    position: fixed;
+    top: 170px; /* navbar height */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: #fff;
+    overflow: hidden;
+    z-index: 9999;
+}
 
+.custom-new-nav-mobile-inner{
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
 
-p ,a, span ,li,td , th{
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+h1,h2,h3,h4,h5,h6{
+   font-family: "Barlow", sans-serif !important; 
+}
+
+span, p ,a, span ,li,td , th{
   font-size: 18px !important;
+   font-family: "Figtree", sans-serif !important;
 }
