@@ -132,7 +132,7 @@ html, body {
 
 .new-home-hero-section {
     position: relative;
-    background-image: url('/assets/images/mold-inspection-benifit-image.webp');
+    background-image: url('../assets/images/mold-inspection-benifit-image.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -151,7 +151,8 @@ html, body {
   .new-home-hero-content {
     position: relative;
     z-index: 2;
-    max-width: 1000px;
+    max-width: 1200px;
+    margin: 0 auto;
     color: #fff;
   }
 
