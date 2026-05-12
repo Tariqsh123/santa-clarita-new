@@ -1,0 +1,239 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #f7f9f3;
+  --foreground: #000000;
+  --card: #ffffff;
+  --card-foreground: #000000;
+  --popover: #ffffff;
+  --popover-foreground: #000000;
+  --primary: #4f46e5;
+  --primary-foreground: #ffffff;
+  --secondary: #14b8a6;
+  --secondary-foreground: #ffffff;
+  --muted: #f0f0f0;
+  --muted-foreground: #333333;
+  --accent: #f59e0b;
+  --accent-foreground: #000000;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #000000;
+
+  --input: #737373;
+  --ring: #a5b4fc;
+  --chart-1: #4f46e5;
+  --chart-2: #14b8a6;
+  --chart-3: #f59e0b;
+  --chart-4: #ec4899;
+  --chart-5: #22c55e;
+  --sidebar: #f7f9f3;
+  --sidebar-foreground: #000000;
+  --sidebar-primary: #4f46e5;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f59e0b;
+  --sidebar-accent-foreground: #000000;
+  --sidebar-border: #000000;
+  --sidebar-ring: #a5b4fc;
+  --font-sans: DM Sans, sans-serif;
+  --font-serif: DM Sans, sans-serif;
+  --font-mono: Space Mono, monospace;
+  --radius: 1rem;
+  --shadow-x: 0px;
+  --shadow-y: 0px;
+  --shadow-blur: 0px;
+  --shadow-spread: 0px;
+  --shadow-opacity: 0.05;
+  --shadow-color: #1a1a1a;
+  --shadow-2xs: 0px 0px 0px 0px hsl(0 0% 10.1961% / 0.03);
+  --shadow-xs: 0px 0px 0px 0px hsl(0 0% 10.1961% / 0.03);
+  --shadow-sm: 0px 0px 0px 0px hsl(0 0% 10.1961% / 0.05),
+    0px 1px 2px -1px hsl(0 0% 10.1961% / 0.05);
+  --shadow: 0px 0px 0px 0px hsl(0 0% 10.1961% / 0.05),
+    0px 1px 2px -1px hsl(0 0% 10.1961% / 0.05);
+  --shadow-md: 0px 0px 0px 0px hsl(0 0% 10.1961% / 0.05),
+    0px 2px 4px -1px hsl(0 0% 10.1961% / 0.05);
+  --shadow-lg: 0px 0px 0px 0px hsl(0 0% 10.1961% / 0.05),
+    0px 4px 6px -1px hsl(0 0% 10.1961% / 0.05);
+  --shadow-xl: 0px 0px 0px 0px hsl(0 0% 10.1961% / 0.05),
+    0px 8px 10px -1px hsl(0 0% 10.1961% / 0.05);
+  --shadow-2xl: 0px 0px 0px 0px hsl(0 0% 10.1961% / 0.13);
+  --tracking-normal: normal;
+  --spacing: 0.25rem;
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+}
+
+
+.footer-logo{
+  position: relative;
+  bottom: 30px;
+  margin: 0;
+}
+
+@media(max-width:600px){
+  .footer-logo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-logo-container p{
+  border-bottom: 1px solid rgb(0, 78, 141);
+  padding-bottom: 20px;
+}
+nav{
+  padding: 0;
+}
+nav .backdrop-blur-lg{
+  border-radius: 0;
+  border-left: none;
+  padding: 0;
+  margin: 0;
+  border-right: none;
+}
+.logo{
+  position: relative;
+  left: 10px;
+}
+    .mobile-menu {
+        border-radius: 20px;
+        width: 99%;
+        margin: 0 auto;
+        padding-right: 50px;
+    }
+}
+#navbarToggler{
+  position: relative;
+  right: 20px;
+}
+html, body {
+  overflow-x: hidden;
+}
+/* main{
+  padding-top: 20px;
+}
+@media(max-width:600px){
+ main{
+  padding-top: 40px;
+} 
+} */
+.nav-items-center ul li a{
+  color: white !important;
+}
+
+
+
+
+.new-home-hero-section {
+    position: relative;
+    background-image: url('/assets/images/mold-inspection-benifit-image.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 20px 60px;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .new-home-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+
+  .new-home-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    color: #fff;
+  }
+
+  .new-home-hero-title {
+    font-size: 56px;
+    line-height: 1.15;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .new-home-hero-text {
+    max-width: 820px;
+  }
+
+  .new-home-hero-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #f3f3f3;
+  }
+
+  .new-home-hero-highlight {
+    font-size: 22px !important;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .new-home-hero-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 16px 34px;
+    background: #4f46e5;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 700;
+    transition: 0.3s ease;
+  }
+
+  @media (max-width: 991px) {
+    /* .new-home-hero-section {
+      padding: 90px 20px;
+    } */
+
+    .new-home-hero-title {
+      font-size: 42px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .new-home-hero-content {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .new-home-hero-title {
+      font-size: 35px;
+    }
+
+    .new-home-hero-text p {
+      font-size: medium !important;
+      line-height: 1.7;
+    }
+
+    .new-home-hero-highlight {
+      font-size: 20px !important;
+    }
+
+    .new-home-hero-btn {
+      width: 95%;
+      font-size: medium !important;
+      max-width: 320px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    /* .new-home-hero-section {
+      padding: 70px 15px;
+    } */
+
+    /* .new-home-hero-title {
+      font-size: 28px;
+    } */
+  }
