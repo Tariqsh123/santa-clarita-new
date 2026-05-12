@@ -369,6 +369,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
 
           <a href="blog.html" class="custom-new-nav-link">Blogs</a>
+          <a href="contact.html" class="custom-new-nav-link">Contact Us</a>
         </div>
         
           <button id="customNewNavToggler" class="lg:hidden text-3xl text-white-700 p-2">
@@ -389,10 +390,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <!-- Right Side -->
         <div class="flex items-center gap-4">
-          <a href="tel:+16615176612" 
+          <a href="tel:+1 (661) 517 6612" 
              class="custom-new-nav-callbtn flex items-center gap-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold px-3 py-2.5 rounded-2xl transition-all shadow-lg shadow-blue-500/30">
             <i class="fas fa-phone-volume text-xl"></i>
-            <span class=" sm:inline">+16 6151 76612</span>
+            <span class=" sm:inline">+1 (661) 517 6612</span>
           </a>
 
         </div>
@@ -780,11 +781,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </p>
 
         <!-- Pricing Table -->
-       <div class="mt-10 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
-  <div class="rounded-3xl border border-gray-200 shadow-lg overflow-hidden bg-white min-w-[800px]">
+       <div class="mt-10">
+
+  <div class="rounded-3xl border border-gray-200 shadow-lg overflow-hidden bg-white w-full">
     
-    <table class="w-full border-collapse text-sm mx-auto">
-      <thead class="bg-gray-50">
+    <table class="w-full border-collapse text-xs md:text-sm">
+
+      <!-- Desktop Header -->
+      <thead class="bg-gray-50 hidden md:table-header-group">
         <tr class="border-b border-gray-200">
           <th class="text-center py-5 px-6 font-semibold text-gray-900 whitespace-nowrap">
             Service
@@ -799,55 +803,102 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </thead>
 
       <tbody class="text-gray-600">
-        <tr class="border-b border-gray-100 hover:bg-gray-50 transition">
-          <td class="py-5 px-6 font-medium text-gray-900 whitespace-nowrap">
-            Mold Inspection & Testing
+
+        <tr class="border-b border-gray-100 hover:bg-gray-50 transition block md:table-row">
+
+          <td class="py-3 px-3 md:py-5 md:px-6 font-medium text-gray-900 flex md:table-cell justify-between md:justify-center items-start gap-2">
+            <span class="md:hidden font-semibold text-gray-400 text-[10px] min-w-[90px]">Service</span>
+            <span class="text-[12px] md:text-sm leading-snug">Mold Inspection & Testing</span>
           </td>
-          <td class="py-5 px-6 whitespace-nowrap">$200 – $600</td>
-          <td class="py-5 px-6 min-w-[300px]">
-            Visual assessment, moisture mapping, lab-tested air/surface samples
+
+          <td class="py-3 px-3 md:py-5 md:px-6 flex md:table-cell justify-between md:justify-center items-start gap-2 whitespace-nowrap">
+            <span class="md:hidden font-semibold text-gray-400 text-[10px] min-w-[90px]">Price</span>
+            <span class="text-[12px] md:text-sm">$200 – $600</span>
           </td>
+
+          <td class="py-3 px-3 md:py-5 md:px-6 flex md:table-cell justify-between md:justify-center items-start gap-2">
+            <span class="md:hidden font-semibold text-gray-400 text-[10px] min-w-[90px]">Scope</span>
+            <span class="text-[12px] md:text-sm leading-snug">Visual assessment, moisture mapping, lab-tested samples</span>
+          </td>
+
         </tr>
 
-        <tr class="border-b border-gray-100 hover:bg-gray-50 transition">
-          <td class="py-5 px-6 font-medium text-gray-900 whitespace-nowrap">
-            Small Mold Removal (under 10 sq ft)
+        <tr class="border-b border-gray-100 hover:bg-gray-50 transition block md:table-row">
+
+          <td class="py-3 px-3 md:py-5 md:px-6 font-medium text-gray-900 flex md:table-cell justify-between md:justify-center items-start gap-2">
+            <span class="md:hidden font-semibold text-gray-400 text-[10px] min-w-[90px]">Service</span>
+            <span class="text-[12px] md:text-sm">Small Mold Removal (under 10 sq ft)</span>
           </td>
-          <td class="py-5 px-6 whitespace-nowrap">$500 – $1,500</td>
-          <td class="py-5 px-6 min-w-[300px]">
-            Single bathroom, cabinet, or isolated wall section
+
+          <td class="py-3 px-3 md:py-5 md:px-6 flex md:table-cell justify-between md:justify-center items-start gap-2 whitespace-nowrap">
+            <span class="md:hidden font-semibold text-gray-400 text-[10px] min-w-[90px]">Price</span>
+            <span class="text-[12px] md:text-sm">$500 – $1,500</span>
           </td>
+
+          <td class="py-3 px-3 md:py-5 md:px-6 flex md:table-cell justify-between md:justify-center items-start gap-2">
+            <span class="md:hidden font-semibold text-gray-400 text-[10px] min-w-[90px]">Scope</span>
+            <span class="text-[12px] md:text-sm leading-snug">Single bathroom, cabinet, or isolated wall section</span>
+          </td>
+
         </tr>
 
-        <tr class="border-b border-gray-100 hover:bg-gray-50 transition">
-          <td class="py-5 px-6 font-medium text-gray-900 whitespace-nowrap">
-            Medium Remediation (10 – 100 sq ft)
+        <tr class="border-b border-gray-100 hover:bg-gray-50 transition block md:table-row">
+
+          <td class="py-3 px-3 md:py-5 md:px-6 font-medium text-gray-900 flex md:table-cell justify-between md:justify-center items-start gap-2">
+            <span class="md:hidden font-semibold text-gray-400 text-[10px] min-w-[90px]">Service</span>
+            <span class="text-[12px] md:text-sm">Medium Remediation (10 – 100 sq ft)</span>
           </td>
-          <td class="py-5 px-6 whitespace-nowrap">$1,500 – $5,000</td>
-          <td class="py-5 px-6 min-w-[300px]">
-            Most residential mold jobs fall in this range
+
+          <td class="py-3 px-3 md:py-5 md:px-6 flex md:table-cell justify-between md:justify-center items-start gap-2 whitespace-nowrap">
+            <span class="md:hidden font-semibold text-gray-400 text-[10px] min-w-[90px]">Price</span>
+            <span class="text-[12px] md:text-sm">$1,500 – $5,000</span>
           </td>
+
+          <td class="py-3 px-3 md:py-5 md:px-6 flex md:table-cell justify-between md:justify-center items-start gap-2">
+            <span class="md:hidden font-semibold text-gray-400 text-[10px] min-w-[90px]">Scope</span>
+            <span class="text-[12px] md:text-sm leading-snug">Most residential mold jobs fall in this range</span>
+          </td>
+
         </tr>
 
-        <tr class="border-b border-gray-100 hover:bg-gray-50 transition">
-          <td class="py-5 px-6 font-medium text-gray-900 whitespace-nowrap">
-            Extensive Remediation (100+ sq ft)
+        <tr class="border-b border-gray-100 hover:bg-gray-50 transition block md:table-row">
+
+          <td class="py-3 px-3 md:py-5 md:px-6 font-medium text-gray-900 flex md:table-cell justify-between md:justify-center items-start gap-2">
+            <span class="md:hidden font-semibold text-gray-400 text-[10px] min-w-[90px]">Service</span>
+            <span class="text-[12px] md:text-sm">Extensive Remediation (100+ sq ft)</span>
           </td>
-          <td class="py-5 px-6 whitespace-nowrap">$5,000 – $15,000+</td>
-          <td class="py-5 px-6 min-w-[300px]">
-            Attic, crawl space, basement, or multi-room contamination
+
+          <td class="py-3 px-3 md:py-5 md:px-6 flex md:table-cell justify-between md:justify-center items-start gap-2 whitespace-nowrap">
+            <span class="md:hidden font-semibold text-gray-400 text-[10px] min-w-[90px]">Price</span>
+            <span class="text-[12px] md:text-sm">$5,000 – $15,000+</span>
           </td>
+
+          <td class="py-3 px-3 md:py-5 md:px-6 flex md:table-cell justify-between md:justify-center items-start gap-2">
+            <span class="md:hidden font-semibold text-gray-400 text-[10px] min-w-[90px]">Scope</span>
+            <span class="text-[12px] md:text-sm leading-snug">Attic, crawl space, basement, or multi-room contamination</span>
+          </td>
+
         </tr>
 
-        <tr class="hover:bg-gray-50 transition">
-          <td class="py-5 px-6 font-medium text-gray-900 whitespace-nowrap">
-            Commercial Mold Remediation
+        <tr class="hover:bg-gray-50 transition block md:table-row">
+
+          <td class="py-3 px-3 md:py-5 md:px-6 font-medium text-gray-900 flex md:table-cell justify-between md:justify-center items-start gap-2">
+            <span class="md:hidden font-semibold text-gray-400 text-[10px] min-w-[90px]">Service</span>
+            <span class="text-[12px] md:text-sm">Commercial Mold Remediation</span>
           </td>
-          <td class="py-5 px-6 whitespace-nowrap">Custom Quote</td>
-          <td class="py-5 px-6 min-w-[300px]">
-            Varies by square footage, occupancy type, and mold species
+
+          <td class="py-3 px-3 md:py-5 md:px-6 flex md:table-cell justify-between md:justify-center items-start gap-2 whitespace-nowrap">
+            <span class="md:hidden font-semibold text-gray-400 text-[10px] min-w-[90px]">Price</span>
+            <span class="text-[12px] md:text-sm">Custom Quote</span>
           </td>
+
+          <td class="py-3 px-3 md:py-5 md:px-6 flex md:table-cell justify-between md:justify-center items-start gap-2">
+            <span class="md:hidden font-semibold text-gray-400 text-[10px] min-w-[90px]">Scope</span>
+            <span class="text-[12px] md:text-sm leading-snug">Varies by square footage, occupancy type, and mold species</span>
+          </td>
+
         </tr>
+
       </tbody>
     </table>
 

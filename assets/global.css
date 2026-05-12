@@ -302,13 +302,13 @@ html, body {
         font-size: small !important;
       }
       .custom-new-nav-callbtn span{
-        font-size: medium !important;
+        font-size: 13px !important;
       }
 
     }
 .custom-new-nav-mobile{
     position: fixed;
-    top: 170px; /* navbar height */
+    top: 155px; /* navbar height */
     left: 0;
     width: 100%;
     height: calc(100vh - 80px);
