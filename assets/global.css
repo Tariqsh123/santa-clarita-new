@@ -329,7 +329,7 @@ h1,h2,h3,h4,h5,h6{
    font-family: "Barlow", sans-serif !important; 
 }
 
-span, p ,a, span ,li,td , th{
+span, p ,a, span ,li,td , th,button{
   font-size: 18px !important;
    font-family: "Figtree", sans-serif !important;
 }
